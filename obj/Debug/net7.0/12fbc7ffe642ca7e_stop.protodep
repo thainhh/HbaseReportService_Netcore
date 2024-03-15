@@ -1,0 +1,2 @@
+obj\Debug\net7.0\Protos/Stop.cs \
+obj\Debug\net7.0\Protos/StopGrpc.cs: Protos/stop.proto

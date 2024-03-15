@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "r3ekeqG5BoqWiWUAzUNLLBjkJ2IWrqEaX0jEIR0DOe4=",
+  "Source": "HbaseReportService",
+  "BasePath": "_content/HbaseReportService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

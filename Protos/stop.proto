@@ -1,0 +1,46 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "HbaseReportService";
+
+package stop;
+
+
+ service Stop{
+	rpc GetReportStopPage(ReportStopRequest) returns (ReportStopReply);
+ }
+
+message ReportStopRequest{
+	int32 companyId = 1;
+	string vehicleIds =2;
+	//google.protobuf.Timestamp fromDate = 3 ;
+	//google.protobuf.Timestamp toDate = 4 ;
+}
+
+
+message ReportStopReply{
+	repeated ReportStop reportStop = 1;
+	int64 total = 2;
+	int64 totalTimeStop = 3;
+	int64 totalSecondsTurnMachineOn = 4;
+	int64 totalSecondsTurnConditionerOn = 5;
+}
+
+message ReportStop{
+  int64 companyId = 1;
+  int64 vehicleId = 2;
+  int64 startTime = 3;
+  int64 endTime = 4;
+  double latitude = 5;
+  double longitude = 6;
+  int64 totalTimeStop = 7;
+  int64 totalSecondsTurnMachineOn = 8;
+  string driverName = 9;
+  string licenseNumber = 10;
+  int64 totalSecondesTurnConditionerOn = 11;
+  int32 vbefore = 12;
+  double currentKMGPS = 13;
+  string temperature = 14;
+  double startFuel = 15;
+  double endFuel = 16;
+  int64 cellID = 17;
+}
